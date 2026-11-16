@@ -1,0 +1,15 @@
+#pragma once
+
+namespace nba_build {
+inline constexpr auto kVersion = "@NBA_BUILD_VERSION@";
+inline constexpr auto kRevision = "@NBA_BUILD_REVISION@";
+inline constexpr auto kConfiguredAtUtc = "@NBA_BUILD_UTC@";
+inline constexpr auto kToken = "@NBA_BUILD_TOKEN@";
+#if defined(__AVX2__)
+inline constexpr auto kCpuVariant = "avx2";
+#elif defined(__AVX__)
+inline constexpr auto kCpuVariant = "avx";
+#else
+inline constexpr auto kCpuVariant = "portable";
+#endif
+}  // namespace nba_build

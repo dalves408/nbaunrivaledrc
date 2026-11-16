@@ -1,0 +1,20 @@
+# Local game inputs and anything derived from them
+/private/
+/generated/*
+!/generated/rexglue.cmake
+/build/
+/out/
+/tools/
+*.zip
+*.xex
+*.xexp
+*.pdb
+*.log
+__pycache__/
+/CMakeUserPresets.json
+NBAUnrivaled-SSH-Info.txt
+/.incoming-transfer/
+/installer/Output/
+/installer/redist/*.exe
+/backup_*/
+/scripts/perf/

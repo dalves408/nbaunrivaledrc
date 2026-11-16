@@ -1,0 +1,97 @@
+{
+  "artifacts": [
+    {
+      "name": "PresentMon",
+      "kind": "file",
+      "file": "PresentMon-2.6.0-x64.exe",
+      "destination": "presentmon/PresentMon.exe",
+      "sha256": "b2a706bc6ad475749e3b7e3409263aa1e6906d45bdcf993f6dbc0f660188f1af",
+      "url": "https://github.com/GameTechDev/PresentMon/releases/download/v2.6.0/PresentMon-2.6.0-x64.exe"
+    },
+    {
+      "name": "PresentMon license",
+      "kind": "file",
+      "file": "PresentMon-LICENSE.txt",
+      "destination": "presentmon/LICENSE.txt",
+      "sha256": "4c949341b1893c8c6ad82f7fb4eedf622cd1fd9c22a9af8f19b2dac19d1947b6",
+      "url": "https://raw.githubusercontent.com/GameTechDev/PresentMon/v2.6.0/LICENSE.txt"
+    },
+    {
+      "name": "LLDB Python runtime",
+      "file": "python-3.10.11-embed-amd64.zip",
+      "destination": "lldb-python",
+      "sha256": "608619f8619075629c9c69f361352a0da6ed7e62f83a0e19c63e0ea32eb7629d",
+      "url": "https://www.python.org/ftp/python/3.10.11/python-3.10.11-embed-amd64.zip"
+    },
+    {
+      "name": "SDL controller mappings",
+      "kind": "file",
+      "file": "gamecontrollerdb.txt",
+      "destination": "controller-mappings/gamecontrollerdb.txt",
+      "sha256": "4ef169fcee14ef9563e36ebf731dc6950494e553bf8b56b5fc8aa70181f0d25c",
+      "url": "https://raw.githubusercontent.com/mdqinc/SDL_GameControllerDB/07af1d50187e94c861c9f9f5d8a55b148f11306b/gamecontrollerdb.txt"
+    },
+    {
+      "name": "SDL controller mappings license",
+      "kind": "file",
+      "file": "controller-mappings-LICENSE.txt",
+      "destination": "controller-mappings/LICENSE",
+      "sha256": "97f35b302b361680ec1e891e95d2d52097bb95abff361434916d99dc1305f127",
+      "url": "https://raw.githubusercontent.com/mdqinc/SDL_GameControllerDB/07af1d50187e94c861c9f9f5d8a55b148f11306b/LICENSE"
+    },
+    {
+      "file": "rexglue-sdk-0.10.1-win-amd64.zip",
+      "destination": "rexglue-sdk",
+      "sha256": "26dbcd19e6976a7ad349917bffc58c1a0f21ad43d71a963d16b623c8e70d1f4d",
+      "url": "https://github.com/rexglue/rexglue-sdk/releases/download/v0.10.1/rexglue-sdk-0.10.1-win-amd64.zip",
+      "name": "ReXGlue"
+    },
+    {
+      "file": "LLVM-21.1.8-win64.exe",
+      "destination": "llvm",
+      "sha256": "7a5386c26497db1691f320121e5b113364dd0274b98e55f15f4dbc00c0450113",
+      "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.8/LLVM-21.1.8-win64.exe",
+      "name": "LLVM"
+    },
+    {
+      "file": "ghidra.zip",
+      "destination": "ghidra",
+      "sha256": "2c2cd776db3c1f6a097ba418922378ac3649cadd5e844a6f5f088ae628a7be67",
+      "url": "https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.2_build/ghidra_12.2_PUBLIC_20261016.zip",
+      "name": "Ghidra"
+    },
+    {
+      "file": "xenia.zip",
+      "destination": "xenia",
+      "sha256": "1adbb2c1c69cbd5fabadb43d03b4c407db3b245de922e11aba699867c68d0796",
+      "url": "https://github.com/xenia-canary/xenia-canary-releases/releases/download/02d2cb5/xenia_canary_windows_.zip",
+      "name": "Xenia"
+    },
+    {
+      "file": "jdk.zip",
+      "destination": "jdk",
+      "sha256": "636bdc13dc649ddc7d5921c5c7d23cca6e44fd19d662b45cc9c02135a6c96c42",
+      "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5%2B8/OpenJDK25U-jdk_x64_windows_hotspot_25.0.5_8.zip",
+      "name": "Java"
+    },
+    {
+      "file": "gradle.zip",
+      "destination": "gradle",
+      "sha256": "b266d5ff6b90eada6dc3b20cb090e3731302e553a27c5d3e4df1f0d76beaff06",
+      "url": "https://services.gradle.org/distributions/gradle-9.3.1-bin.zip",
+      "name": "Gradle"
+    }
+  ],
+  "sources": [
+    {
+      "commit": "bf45b921abac3048ef0733420c0550c57946ca45",
+      "url": "https://github.com/ryzendew/XBLA-Extract.git",
+      "name": "XBLA-Extract"
+    },
+    {
+      "commit": "4bcf58da4caa5260644fc19f5eef5ccde3b7ff46",
+      "url": "https://github.com/zeroKilo/XEXLoaderWV.git",
+      "name": "XEXLoaderWV"
+    }
+  ]
+}

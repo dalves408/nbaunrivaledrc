@@ -1,0 +1,174 @@
+{
+  "$schema": "https://recomplauncher.com/schema/recomplauncher.json",
+  "format": 1,
+  "name": "NBA Unrivaled Recompiled",
+  "game": {
+    "kind": "iso_or_folder",
+    "label": "Choose your own NBA Unrivaled Xbox 360 .zip, the LIVE content file, or a game folder.",
+    "dumps": [
+      {
+        "name": "NBA Unrivaled XBLA ZIP (World)",
+        "size": 173258829,
+        "crc32": "c18e421f"
+      },
+      {
+        "name": "NBA Unrivaled XBLA ZIP (alternate)",
+        "size": 173305261,
+        "crc32": "4975adb7"
+      },
+      {
+        "name": "NBA Unrivaled LIVE payload (World)",
+        "size": 185798656,
+        "crc32": "2e944c2e"
+      },
+      {
+        "name": "NBA Unrivaled LIVE payload (alternate)",
+        "size": 185798656,
+        "crc32": "855d2a2f"
+      }
+    ]
+  },
+  "start": {
+    "program": [
+      "nbaunrivaled.exe"
+    ]
+  },
+  "prepare": {
+    "program": [
+      "nba_import.exe"
+    ],
+    "args": [
+      "--launcher-prepare",
+      "{game}",
+      "{install}/game"
+    ],
+    "label": "Import NBA Unrivaled and apply the title-menu patch",
+    "timeout": 300,
+    "done": [
+      "{install}/game/default.xex",
+      "{install}/game/data.zip",
+      "{install}/game/data.idx",
+      "{install}/game/.nba-launcher-ready"
+    ]
+  },
+  "config": [
+    {
+      "id": "main",
+      "format": "ini",
+      "file": [
+        {
+          "path": "{local}/NBAUnrivaled/settings.ini"
+        }
+      ]
+    }
+  ],
+  "folders": {
+    "logs": [
+      {
+        "path": "{local}/NBAUnrivaled/logs"
+      }
+    ],
+    "saves": [
+      {
+        "path": "{local}/NBAUnrivaled/user"
+      }
+    ]
+  },
+  "saves": [
+    "{local}/NBAUnrivaled/user"
+  ],
+  "actions": [
+    {
+      "id": "open_logs",
+      "label": "Open NBA Unrivaled logs",
+      "open": "logs"
+    }
+  ],
+  "settings": [
+    {
+      "id": "display_mode",
+      "label": "Display mode",
+      "defaults": {
+        "display/display_mode": "borderless"
+      },
+      "choices": [
+        {"label": "Windowed", "set": {"display/display_mode": "windowed"}},
+        {"label": "Borderless fullscreen", "set": {"display/display_mode": "borderless"}},
+        {"label": "Exclusive fullscreen", "set": {"display/display_mode": "exclusive"}}
+      ]
+    },
+    {
+      "id": "frame_rate",
+      "label": "Frame rate",
+      "defaults": {
+        "display/frame_rate": "60"
+      },
+      "choices": [
+        {"label": "30", "set": {"display/frame_rate": "30"}},
+        {"label": "60", "set": {"display/frame_rate": "60"}},
+        {"label": "Unlimited", "set": {"display/frame_rate": "unlimited"}}
+      ]
+    },
+    {
+      "id": "vsync",
+      "label": "VSync",
+      "defaults": {
+        "display/vsync": "false"
+      },
+      "choices": [
+        {"label": "Off", "set": {"display/vsync": "false"}},
+        {"label": "On", "set": {"display/vsync": "true"}}
+      ]
+    },
+    {
+      "id": "resolution_scale",
+      "label": "Internal resolution",
+      "defaults": {
+        "display/resolution_scale": "1"
+      },
+      "choices": [
+        {"label": "Low", "set": {"display/resolution_scale": "1"}},
+        {"label": "Medium", "set": {"display/resolution_scale": "2"}},
+        {"label": "High", "set": {"display/resolution_scale": "3"}}
+      ]
+    },
+    {
+      "id": "anti_aliasing",
+      "label": "Anti-aliasing",
+      "defaults": {
+        "display/anti_aliasing": "msaa2x"
+      },
+      "choices": [
+        {"label": "Off", "set": {"display/anti_aliasing": "off"}},
+        {"label": "FXAA", "set": {"display/anti_aliasing": "fxaa"}},
+        {"label": "FXAA Extreme", "set": {"display/anti_aliasing": "fxaa_extreme"}},
+        {"label": "2x MSAA", "set": {"display/anti_aliasing": "msaa2x"}}
+      ]
+    },
+    {
+      "id": "anisotropic_override",
+      "label": "Texture filtering",
+      "defaults": {
+        "display/anisotropic_override": "3"
+      },
+      "choices": [
+        {"label": "Off", "set": {"display/anisotropic_override": "0"}},
+        {"label": "2x", "set": {"display/anisotropic_override": "2"}},
+        {"label": "4x", "set": {"display/anisotropic_override": "3"}},
+        {"label": "8x", "set": {"display/anisotropic_override": "4"}},
+        {"label": "16x", "set": {"display/anisotropic_override": "5"}}
+      ]
+    },
+    {
+      "id": "present_letterbox",
+      "label": "Keep aspect ratio",
+      "defaults": {
+        "display/present_letterbox": "true"
+      },
+      "choices": [
+        {"label": "Off", "set": {"display/present_letterbox": "false"}},
+        {"label": "On", "set": {"display/present_letterbox": "true"}}
+      ]
+    }
+  ]
+}
