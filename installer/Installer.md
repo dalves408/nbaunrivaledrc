@@ -13,6 +13,18 @@ source → ready → copy), with two deliberate differences:
 
 ## Build
 
+Build the RecompLauncher ZIP from the portable Release build. Run this from the
+checkout root after building and loading the Visual Studio developer shell.
+
+```powershell
+.\installer\Package-RecompLauncher.ps1 -Version 1.0.0 -BuildDir out/build/win-amd64-release-portable
+```
+
+Attach the resulting `*-Windows-x64.zip` and checksum from `out/recomplauncher`
+to the GitHub release. Use that ZIP pattern for RecompLauncher's Windows build.
+The manifest sits next to the executable and points the launcher to the shared
+INI and log directory. The ZIP runs without the standalone installer.
+
 Ship **both** ISA builds into Setup; install time picks the primary
 `nbaunrivaled.exe` and also installs the unused ISA under a renamed filename.
 

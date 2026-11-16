@@ -2,9 +2,13 @@
 
 An unofficial native Windows port of the Xbox 360 XBLA version of **NBA Unrivaled**, built through static PowerPC recompilation with ReXGlue.
 
+<a href="https://recomplauncher.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://recomplauncher.com/assets/press/launcher/badge-light.svg"><img alt="Get it on RecompLauncher" src="https://recomplauncher.com/assets/press/launcher/badge-dark.svg" height="48"></picture></a>
+
 ## Play 1.0
 
 Run `NBAUnrivaled-Setup-1.0.0.exe` from the GitHub release and select your own Xbox 360 XBLA game files. Setup accepts a supported Xbox LIVE package, a ZIP containing it, or an extracted game folder. The default install folder is `C:\Games\NBA Unrivaled`. Run Setup again to update or repair an existing install. Save data, settings, and logs are under `%LOCALAPPDATA%\NBAUnrivaled`.
+
+Use the `NBAUnrivaled-Recompiled-v1.0.0-Windows-x64.zip` release asset with RecompLauncher. It contains the Level 3 profile, importer, and Windows runtime files. RecompLauncher can prepare the game from your copy, edit the same settings as F1, and find the game logs for reports.
 
 ## Current progress
 
